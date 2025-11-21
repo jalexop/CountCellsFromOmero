@@ -5,6 +5,19 @@
 // @String(label="Omero Username", style="Text Field") omrusr
 // @String(label="Password", style='password', persist=false) omrpwd
 // @String(label="Analyse Data of the following username", style="Text Field") omrusrsudo
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//				Macro written by Dr. Ioannis Alexopoulos
+// The author of the macro reserve the copyrights of the original macro.
+// However, you are welcome to distribute, modify and use the program under 
+// the terms of the GNU General Public License, as long as you attribute proper 
+// acknowledgement to the author as mentioned above.
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 requires("1.54p");
 ThresholdMethods=getList("threshold.methods");
