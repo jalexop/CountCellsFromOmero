@@ -16,7 +16,7 @@
 <p>Update Fiji to it's latest version upon first run.</p>
 <h3><u>Step 2</u></h3>
 <p>Install required depedencies:</p>
-<li>Install the <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/installation.html">OMERO.insight plugin</a> (if you haven't already). For version 5.8.6 you can use this <a href="https://github.com/ome/omero-insight/releases/download/v5.8.6/omero_ij-5.8.6-all.jar>link</a>.</li>
+<li>Install the <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/installation.html">OMERO.insight plugin</a> (if you haven't already). For version 5.8.6 you can use this <a href="https://github.com/ome/omero-insight/releases/download/v5.8.6/omero_ij-5.8.6-all.jar">link</a>.</li>
 <li>Download the JAR file for this <a href="https://github.com/GReD-Clermont/simple-omero-client/releases/tag/5.19.0/">library</a>.</li>
 <li>Download the JAR file (<a href="https://github.com/GReD-Clermont/omero_macro-extensions/releases/tag/1.4.0/">for this plugin</a>).</li>
 <li>Place these JAR files in your plugins folder (example [Path of Fiji Installation}/plugins/).</li>
@@ -24,6 +24,8 @@
 <p>Install the CountCellsFromOmero.ijm</p>
 <li>Download the .ijm file.</li>
 <li>Move the downloaded file to the Fiji plugins folder.</li>
+<br>
+<p>* You can skip Steps 2 and 3 by downloading all files together using the latest release of this package (<a href="https://github.com/jalexop/CountCellsFromOmero/releases">link</a>).</p>
 <br>
 <h2>Usage</h2>
 <li>Select the CountCellsFromOmero macro from your Fiji Plugins menu</li>
