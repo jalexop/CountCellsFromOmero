@@ -32,7 +32,12 @@ if (succesfulConnectionOmero){
 }else{
 	exit("Cannot connect to Omero Server "+omrsrv+" on port "+omrport+" for user "+omrusr+"");
 }
-Ext.sudo(omrusrsudo);
+omrusrsudo=replace(omrusrsudo, " ", "");
+if(omrusrsudo!=""){
+	Ext.sudo(omrusrsudo);
+}else{
+	omrusrsudo=omrusr;
+}
 ListForUser=Ext.listForUser(omrusrsudo);
 userDatasetsIDs=split(Ext.list("Dataset"), ",");
 userDatasetsNames=newArray(userDatasetsIDs.length);
@@ -42,8 +47,8 @@ for(d=0;d<userDatasetsIDs.length;d++){
 	userDatasetsNames[d]=Ext.getName("Dataset", userDatasetsIDs[d]);
 }
 
-rows=10;
-columns=(userDatasetsIDs.length/10)+1;
+rows=20;
+columns=(userDatasetsIDs.length/20)+1;
 Dialog.create("Analysis Parameters");
 if(userDatasetsIDs.length == 1){default_check_box=true;}else{default_check_box=false;}
 for(d=0;d<userDatasetsIDs.length;d++){
