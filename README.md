@@ -29,7 +29,7 @@
 <br>
 <h2>Usage</h2>
 <li>Select the CountCellsFromOmero macro from your Fiji Plugins menu</li>
-<li>Use your Omero server address and the correct port. Use your username and password. If you want to analyse images from another user you need to indicate the username (user2). Otherwise, use your own username at the field below password (see image below) </li>
+<li>Use your Omero server address and the correct port. Use your username and password. If you want to analyse images from another user you need to indicate the username (user2). Otherwise, use your own username at the field below password (see image below) or leave this field empty. Only Omero accounts with elevated priveledges can analyse other user's data. The macro will fail if you have not the correct rights. </li>
 <img width="455" height="378" alt="image" src="https://github.com/user-attachments/assets/5352f523-152d-4521-a9fa-ddb8e2033660" />
 <li>Select the datasets that contain the images to be analysed, and indicate the channel number (for multi-channel images) that will be used for the analysis. Finally select the thresholding algorithm (e.g. Otsu in image below)</li>
 <img width="455" height="378" alt="image" src="https://github.com/user-attachments/assets/4c87ce3b-b229-41b5-82a1-86f5af4920a6" />
