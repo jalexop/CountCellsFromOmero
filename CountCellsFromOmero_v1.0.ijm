@@ -119,7 +119,11 @@ for (i=0; i<userDatasetsIDs.length; i++){
 			run("Duplicate...", "title=tmp duplicate");
 			analyseData(Channel2Analyse, Thres_Method);
 			selectWindow("MaximumInt");
-			newName="MAX_"+"Ch"+Channel2Analyse+"_Counting_"+Ext.getName("Image", Images2Open[q]);
+			oldName=Ext.getName("Image", Images2Open[q]);
+			oldName=replace(oldName, "[", "_");
+			oldName=replace(oldName, "]", "_");
+			oldName=replace(oldName, "/", "_");
+			newName="MAX_"+"Ch"+Channel2Analyse+"_Counting_"+oldName;
 			rename(newName);
 			Area=newArray(nResults);
 			Perimeter=newArray(nResults);
