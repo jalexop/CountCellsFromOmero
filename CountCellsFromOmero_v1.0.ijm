@@ -192,6 +192,8 @@ function analyseData(Channel2Analyse, Thres_Method){
 	getDimensions(width, height, channels, slices, frames);
 	if(slices>1){
 		run("Z Project...", "projection=[Max Intensity]");
+	}else{
+		rename("MAX_tmp");
 	}
 	if(channels>1){
 		run("Split Channels");
